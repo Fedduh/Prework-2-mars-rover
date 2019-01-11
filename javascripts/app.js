@@ -23,21 +23,18 @@ function turnLeft(rover){
   switch (rover.direction) {
     case "N":
       rover.direction = "W"
-      console.log("new direction is " + rover.direction);
       break;
       case "E":
       rover.direction = "N"
-      console.log("new direction is " + rover.direction);
       break;
       case "S":
       rover.direction = "E"
-      console.log("new direction is " + rover.direction);
       break;
       case "W":
       rover.direction = "S"
-      console.log("new direction is " + rover.direction);
       break;
-  }
+    }
+  console.log("new direction is " + rover.direction);
 }
 
 function turnRight(rover){
@@ -47,21 +44,18 @@ function turnRight(rover){
   switch (rover.direction) {
     case "N":
       rover.direction = "E"
-      console.log("new direction is " + rover.direction);
       break;
       case "E":
       rover.direction = "S"
-      console.log("new direction is " + rover.direction);
       break;
       case "S":
       rover.direction = "W"
-      console.log("new direction is " + rover.direction);
       break;
       case "W":
       rover.direction = "N"
-      console.log("new direction is " + rover.direction);
-      break;
+            break;
   }
+  console.log("new direction is " + rover.direction);
 }
 
 function moveForward(rover){
@@ -180,11 +174,11 @@ function input (directions) {
           turnLeft(rover);
           // forward
         case "f":
-        // console.log("Direction " + directions[i] + " is: go foward!");
-        moveForward(rover);
+          // console.log("Direction " + directions[i] + " is: go foward!");
+          moveForward(rover);
         case "b":
-        // console.log("Direction " + directions[i] + " is: go back!");
-        moveBackward(rover);
+          // console.log("Direction " + directions[i] + " is: go back!");
+          moveBackward(rover);
       }
     }
     // end position
